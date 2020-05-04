@@ -1,0 +1,581 @@
+EESchema Schematic File Version 4
+LIBS:ESP32_GRBL_SUBD-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5F4F5669
+P 3950 1450
+AR Path="/5F4F5669" Ref="Q?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F5669" Ref="Q2"  Part="1" 
+F 0 "Q2" V 4201 1450 50  0000 C CNN
+F 1 "BSS138" V 4292 1450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 1375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3950 1450 50  0001 L CNN
+	1    3950 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4F566F
+P 4400 1350
+AR Path="/5F4F566F" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F566F" Ref="R15"  Part="1" 
+F 0 "R15" H 4470 1396 50  0000 L CNN
+F 1 "10k" H 4470 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 1350 50  0001 C CNN
+F 3 "~" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4F5675
+P 3700 1350
+AR Path="/5F4F5675" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F5675" Ref="R9"  Part="1" 
+F 0 "R9" H 3630 1396 50  0000 R CNN
+F 1 "10k" H 3630 1305 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 1350 50  0001 C CNN
+F 3 "~" H 3700 1350 50  0001 C CNN
+	1    3700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F4F567B
+P 3700 1100
+AR Path="/5F4F567B" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F567B" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 3700 950 50  0001 C CNN
+F 1 "+3.3V" H 3715 1273 50  0000 C CNN
+F 2 "" H 3700 1100 50  0001 C CNN
+F 3 "" H 3700 1100 50  0001 C CNN
+	1    3700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4F5681
+P 4400 1100
+AR Path="/5F4F5681" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F5681" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 4400 950 50  0001 C CNN
+F 1 "+5V" H 4415 1273 50  0000 C CNN
+F 2 "" H 4400 1100 50  0001 C CNN
+F 3 "" H 4400 1100 50  0001 C CNN
+	1    4400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1100 3700 1150
+Wire Wire Line
+	3700 1150 3950 1150
+Wire Wire Line
+	3950 1150 3950 1250
+Connection ~ 3700 1150
+Wire Wire Line
+	3700 1150 3700 1200
+Wire Wire Line
+	4400 1200 4400 1100
+Wire Wire Line
+	4400 1550 4400 1500
+Wire Wire Line
+	3750 1550 3700 1550
+Wire Wire Line
+	3700 1550 3700 1500
+Wire Wire Line
+	3700 1550 3500 1550
+Connection ~ 3700 1550
+Wire Wire Line
+	4400 1550 4650 1550
+Connection ~ 4400 1550
+Wire Wire Line
+	4150 1550 4400 1550
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5F4F7E43
+P 3950 2400
+AR Path="/5F4F7E43" Ref="Q?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F7E43" Ref="Q3"  Part="1" 
+F 0 "Q3" V 4201 2400 50  0000 C CNN
+F 1 "BSS138" V 4292 2400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 2325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3950 2400 50  0001 L CNN
+	1    3950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4F7E49
+P 4400 2300
+AR Path="/5F4F7E49" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F7E49" Ref="R16"  Part="1" 
+F 0 "R16" H 4470 2346 50  0000 L CNN
+F 1 "10k" H 4470 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 2300 50  0001 C CNN
+F 3 "~" H 4400 2300 50  0001 C CNN
+	1    4400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4F7E4F
+P 3700 2300
+AR Path="/5F4F7E4F" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F7E4F" Ref="R10"  Part="1" 
+F 0 "R10" H 3630 2346 50  0000 R CNN
+F 1 "10k" H 3630 2255 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 2300 50  0001 C CNN
+F 3 "~" H 3700 2300 50  0001 C CNN
+	1    3700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F4F7E55
+P 3700 2050
+AR Path="/5F4F7E55" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F7E55" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 3700 1900 50  0001 C CNN
+F 1 "+3.3V" H 3715 2223 50  0000 C CNN
+F 2 "" H 3700 2050 50  0001 C CNN
+F 3 "" H 3700 2050 50  0001 C CNN
+	1    3700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4F7E5B
+P 4400 2050
+AR Path="/5F4F7E5B" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F4F7E5B" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 4400 1900 50  0001 C CNN
+F 1 "+5V" H 4415 2223 50  0000 C CNN
+F 2 "" H 4400 2050 50  0001 C CNN
+F 3 "" H 4400 2050 50  0001 C CNN
+	1    4400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2050 3700 2100
+Wire Wire Line
+	3700 2100 3950 2100
+Wire Wire Line
+	3950 2100 3950 2200
+Connection ~ 3700 2100
+Wire Wire Line
+	3700 2100 3700 2150
+Wire Wire Line
+	4400 2150 4400 2050
+Wire Wire Line
+	4400 2500 4400 2450
+Wire Wire Line
+	3750 2500 3700 2500
+Wire Wire Line
+	3700 2500 3700 2450
+Wire Wire Line
+	3700 2500 3500 2500
+Connection ~ 3700 2500
+Wire Wire Line
+	4400 2500 4650 2500
+Connection ~ 4400 2500
+Wire Wire Line
+	4150 2500 4400 2500
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5F4FA56F
+P 3950 3350
+AR Path="/5F4FA56F" Ref="Q?"  Part="1" 
+AR Path="/5F4EE6A6/5F4FA56F" Ref="Q4"  Part="1" 
+F 0 "Q4" V 4201 3350 50  0000 C CNN
+F 1 "BSS138" V 4292 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 3275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3950 3350 50  0001 L CNN
+	1    3950 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4FA575
+P 4400 3250
+AR Path="/5F4FA575" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F4FA575" Ref="R17"  Part="1" 
+F 0 "R17" H 4470 3296 50  0000 L CNN
+F 1 "10k" H 4470 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 3250 50  0001 C CNN
+F 3 "~" H 4400 3250 50  0001 C CNN
+	1    4400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4FA57B
+P 3700 3250
+AR Path="/5F4FA57B" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F4FA57B" Ref="R11"  Part="1" 
+F 0 "R11" H 3630 3296 50  0000 R CNN
+F 1 "10k" H 3630 3205 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3250 50  0001 C CNN
+F 3 "~" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F4FA581
+P 3700 3000
+AR Path="/5F4FA581" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F4FA581" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 3700 2850 50  0001 C CNN
+F 1 "+3.3V" H 3715 3173 50  0000 C CNN
+F 2 "" H 3700 3000 50  0001 C CNN
+F 3 "" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4FA587
+P 4400 3000
+AR Path="/5F4FA587" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F4FA587" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 4400 2850 50  0001 C CNN
+F 1 "+5V" H 4415 3173 50  0000 C CNN
+F 2 "" H 4400 3000 50  0001 C CNN
+F 3 "" H 4400 3000 50  0001 C CNN
+	1    4400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3000 3700 3050
+Wire Wire Line
+	3700 3050 3950 3050
+Wire Wire Line
+	3950 3050 3950 3150
+Connection ~ 3700 3050
+Wire Wire Line
+	3700 3050 3700 3100
+Wire Wire Line
+	4400 3100 4400 3000
+Wire Wire Line
+	4400 3450 4400 3400
+Wire Wire Line
+	3750 3450 3700 3450
+Wire Wire Line
+	3700 3450 3700 3400
+Wire Wire Line
+	3700 3450 3500 3450
+Connection ~ 3700 3450
+Wire Wire Line
+	4400 3450 4650 3450
+Connection ~ 4400 3450
+Wire Wire Line
+	4150 3450 4400 3450
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5F506E46
+P 3950 4300
+AR Path="/5F506E46" Ref="Q?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E46" Ref="Q5"  Part="1" 
+F 0 "Q5" V 4201 4300 50  0000 C CNN
+F 1 "BSS138" V 4292 4300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 4225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3950 4300 50  0001 L CNN
+	1    3950 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F506E4C
+P 4400 4200
+AR Path="/5F506E4C" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E4C" Ref="R18"  Part="1" 
+F 0 "R18" H 4470 4246 50  0000 L CNN
+F 1 "10k" H 4470 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 4200 50  0001 C CNN
+F 3 "~" H 4400 4200 50  0001 C CNN
+	1    4400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F506E52
+P 3700 4200
+AR Path="/5F506E52" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E52" Ref="R12"  Part="1" 
+F 0 "R12" H 3630 4246 50  0000 R CNN
+F 1 "10k" H 3630 4155 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 4200 50  0001 C CNN
+F 3 "~" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F506E58
+P 3700 3950
+AR Path="/5F506E58" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E58" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 3700 3800 50  0001 C CNN
+F 1 "+3.3V" H 3715 4123 50  0000 C CNN
+F 2 "" H 3700 3950 50  0001 C CNN
+F 3 "" H 3700 3950 50  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F506E5E
+P 4400 3950
+AR Path="/5F506E5E" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E5E" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 4400 3800 50  0001 C CNN
+F 1 "+5V" H 4415 4123 50  0000 C CNN
+F 2 "" H 4400 3950 50  0001 C CNN
+F 3 "" H 4400 3950 50  0001 C CNN
+	1    4400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3950 3700 4000
+Wire Wire Line
+	3700 4000 3950 4000
+Wire Wire Line
+	3950 4000 3950 4100
+Connection ~ 3700 4000
+Wire Wire Line
+	3700 4000 3700 4050
+Wire Wire Line
+	4400 4050 4400 3950
+Wire Wire Line
+	4400 4400 4400 4350
+Wire Wire Line
+	3750 4400 3700 4400
+Wire Wire Line
+	3700 4400 3700 4350
+Wire Wire Line
+	3700 4400 3500 4400
+Connection ~ 3700 4400
+Wire Wire Line
+	4400 4400 4650 4400
+Connection ~ 4400 4400
+Wire Wire Line
+	4150 4400 4400 4400
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5F506E72
+P 3950 5250
+AR Path="/5F506E72" Ref="Q?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E72" Ref="Q6"  Part="1" 
+F 0 "Q6" V 4201 5250 50  0000 C CNN
+F 1 "BSS138" V 4292 5250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 5175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3950 5250 50  0001 L CNN
+	1    3950 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F506E78
+P 4400 5150
+AR Path="/5F506E78" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E78" Ref="R19"  Part="1" 
+F 0 "R19" H 4470 5196 50  0000 L CNN
+F 1 "10k" H 4470 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 5150 50  0001 C CNN
+F 3 "~" H 4400 5150 50  0001 C CNN
+	1    4400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F506E7E
+P 3700 5150
+AR Path="/5F506E7E" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E7E" Ref="R13"  Part="1" 
+F 0 "R13" H 3630 5196 50  0000 R CNN
+F 1 "10k" H 3630 5105 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 5150 50  0001 C CNN
+F 3 "~" H 3700 5150 50  0001 C CNN
+	1    3700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F506E84
+P 3700 4900
+AR Path="/5F506E84" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E84" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 3700 4750 50  0001 C CNN
+F 1 "+3.3V" H 3715 5073 50  0000 C CNN
+F 2 "" H 3700 4900 50  0001 C CNN
+F 3 "" H 3700 4900 50  0001 C CNN
+	1    3700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F506E8A
+P 4400 4900
+AR Path="/5F506E8A" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E8A" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 4400 4750 50  0001 C CNN
+F 1 "+5V" H 4415 5073 50  0000 C CNN
+F 2 "" H 4400 4900 50  0001 C CNN
+F 3 "" H 4400 4900 50  0001 C CNN
+	1    4400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4900 3700 4950
+Wire Wire Line
+	3700 4950 3950 4950
+Wire Wire Line
+	3950 4950 3950 5050
+Connection ~ 3700 4950
+Wire Wire Line
+	3700 4950 3700 5000
+Wire Wire Line
+	4400 5000 4400 4900
+Wire Wire Line
+	4400 5350 4400 5300
+Wire Wire Line
+	3750 5350 3700 5350
+Wire Wire Line
+	3700 5350 3700 5300
+Wire Wire Line
+	3700 5350 3500 5350
+Connection ~ 3700 5350
+Wire Wire Line
+	4400 5350 4650 5350
+Connection ~ 4400 5350
+Wire Wire Line
+	4150 5350 4400 5350
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5F506E9E
+P 3950 6200
+AR Path="/5F506E9E" Ref="Q?"  Part="1" 
+AR Path="/5F4EE6A6/5F506E9E" Ref="Q7"  Part="1" 
+F 0 "Q7" V 4201 6200 50  0000 C CNN
+F 1 "BSS138" V 4292 6200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4150 6125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3950 6200 50  0001 L CNN
+	1    3950 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F506EA4
+P 4400 6100
+AR Path="/5F506EA4" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F506EA4" Ref="R20"  Part="1" 
+F 0 "R20" H 4470 6146 50  0000 L CNN
+F 1 "10k" H 4470 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4330 6100 50  0001 C CNN
+F 3 "~" H 4400 6100 50  0001 C CNN
+	1    4400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F506EAA
+P 3700 6100
+AR Path="/5F506EAA" Ref="R?"  Part="1" 
+AR Path="/5F4EE6A6/5F506EAA" Ref="R14"  Part="1" 
+F 0 "R14" H 3630 6146 50  0000 R CNN
+F 1 "10k" H 3630 6055 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 6100 50  0001 C CNN
+F 3 "~" H 3700 6100 50  0001 C CNN
+	1    3700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F506EB0
+P 3700 5850
+AR Path="/5F506EB0" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F506EB0" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 3700 5700 50  0001 C CNN
+F 1 "+3.3V" H 3715 6023 50  0000 C CNN
+F 2 "" H 3700 5850 50  0001 C CNN
+F 3 "" H 3700 5850 50  0001 C CNN
+	1    3700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F506EB6
+P 4400 5850
+AR Path="/5F506EB6" Ref="#PWR?"  Part="1" 
+AR Path="/5F4EE6A6/5F506EB6" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 4400 5700 50  0001 C CNN
+F 1 "+5V" H 4415 6023 50  0000 C CNN
+F 2 "" H 4400 5850 50  0001 C CNN
+F 3 "" H 4400 5850 50  0001 C CNN
+	1    4400 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5850 3700 5900
+Wire Wire Line
+	3700 5900 3950 5900
+Wire Wire Line
+	3950 5900 3950 6000
+Connection ~ 3700 5900
+Wire Wire Line
+	3700 5900 3700 5950
+Wire Wire Line
+	4400 5950 4400 5850
+Wire Wire Line
+	4400 6300 4400 6250
+Wire Wire Line
+	3750 6300 3700 6300
+Wire Wire Line
+	3700 6300 3700 6250
+Wire Wire Line
+	3700 6300 3500 6300
+Connection ~ 3700 6300
+Wire Wire Line
+	4400 6300 4650 6300
+Connection ~ 4400 6300
+Wire Wire Line
+	4150 6300 4400 6300
+Text HLabel 4650 1550 2    50   Input ~ 0
+5V_IN_1
+Text HLabel 4650 2500 2    50   Input ~ 0
+5V_IN_2
+Text HLabel 4650 3450 2    50   Input ~ 0
+5V_IN_3
+Text HLabel 4650 4400 2    50   Input ~ 0
+5V_IN_4
+Text HLabel 4650 5350 2    50   Input ~ 0
+5V_IN_5
+Text HLabel 4650 6300 2    50   Input ~ 0
+5V_IN_6
+Text HLabel 3500 1550 0    50   Input ~ 0
+3V3_OUT_1
+Text HLabel 3500 2500 0    50   Input ~ 0
+3V3_OUT_2
+Text HLabel 3500 3450 0    50   Input ~ 0
+3V3_OUT_3
+Text HLabel 3500 4400 0    50   Input ~ 0
+3V3_OUT_4
+Text HLabel 3500 5350 0    50   Input ~ 0
+3V3_OUT_5
+Text HLabel 3500 6300 0    50   Input ~ 0
+3V3_OUT_6
+$EndSCHEMATC
