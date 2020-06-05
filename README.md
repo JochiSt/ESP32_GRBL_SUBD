@@ -16,4 +16,4 @@ PCBs [version 0.9](https://github.com/JochiSt/ESP32_GRBL_SUBD/releases/tag/v0.9)
 ![OSHpark Render BOT](/images/ESP32_GRBL_SUBD_BOT.png)
 
 ### received PCBs
-![OSHpark received(/images/oshpark_rev0.9_2020.jpg)
+![OSHpark received](/images/oshpark_rev0.9_2020.jpg)
