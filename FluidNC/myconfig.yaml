@@ -1,0 +1,133 @@
+name: "ESP32 GRBL SUBD Stepcraft 300"
+board: "https://github.com/JochiSt/ESP32_GRBL_SUBD"
+
+stepping:
+  engine: RMT
+  idle_ms: 250
+  dir_delay_us: 1
+  pulse_us: 2
+  disable_delay_us: 0
+
+axes:
+  shared_stepper_disable_pin: gpio.13:low
+  
+  x:
+    steps_per_mm: 133
+    max_rate_mm_per_min: 2000
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 1000
+    homing:
+      cycle: 2
+      mpos_mm: 10
+      positive_direction: false
+      
+    motor0:
+      limit_all_pin: gpio.32:low:pu
+      standard_stepper:
+        step_pin: gpio.12
+        direction_pin: gpio.14
+    motor1:
+      null_motor:
+
+  y:
+    steps_per_mm: 133
+    max_rate_mm_per_min: 2000
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 1000
+    homing:
+      cycle: 3
+      mpos_mm: 10
+      positive_direction: false
+
+    motor0:
+      limit_all_pin: gpio.33:low:pu
+      standard_stepper:
+        direction_pin: gpio.15
+        step_pin: gpio.02
+    motor1:
+      null_motor:
+
+  z:
+    steps_per_mm: 133
+    max_rate_mm_per_min: 2000
+    acceleration_mm_per_sec2: 25
+    max_travel_mm: 1000
+    homing:
+      cycle: 1
+      mpos_mm: 10
+      positive_direction: true
+
+    motor0:
+      limit_all_pin: gpio.25:low:pu
+      standard_stepper:
+        direction_pin: gpio.00
+        step_pin: gpio.04
+    motor1:
+      null_motor:
+      
+  a:
+    steps_per_mm: 53.400
+    max_rate_mm_per_min: 5000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 960.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: false
+      mpos_mm: 150.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 200.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: gpio.26
+      hard_limits: false
+      pulloff_mm: 3.000
+      standard_stepper:
+        step_pin: gpio.17
+        direction_pin: gpio.16
+    motor1:
+      null_motor:
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+
+sdcard:
+  cs_pin: gpio.5
+  card_detect_pin: NO_PIN
+
+coolant:
+  flood_pin: gpio.27
+
+control:
+  safety_door_pin: NO_PIN
+  reset_pin: gpio.34
+  feed_hold_pin: gpio.36
+  cycle_start_pin: gpio.39
+  macro0_pin: NO_PIN
+  macro1_pin: NO_PIN
+  macro2_pin: NO_PIN
+  macro3_pin: NO_PIN
+
+probe:
+  pin: gpio.35:low
+
+start:
+  must_home: true
+
+PWM:
+  pwm_hz: 5000
+  output_pin: gpio.21
+  enable_pin: gpio.22
+  direction_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  spinup_ms: 1000
+  spindown_ms: 1000
+  tool_num: 0
+  speed_map: 0=0% 10000=100%
